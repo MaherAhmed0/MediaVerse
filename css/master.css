@@ -1,12 +1,12 @@
 body {
     background-color: #141519;
     font-family: Arial, Helvetica, sans-serif;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .header {
     background-color: #23252B;
-    /* overflow: auto; */
+    overflow: auto;
     position: fixed;
     width: 100%;
     top: 0;
@@ -15,37 +15,36 @@ body {
 }
 
 .logo {
-    height: 92px;
-    width: 121px;
+    height: 71px;
+    width: 100px;
     float: left;
-    margin-left: 110px;
+    margin-left: 100px;
 }
 
 .brand-name {
     float: left;
     color: #D0A012;
-    margin-top: 32px;
+    margin-top: 22px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     margin-left: -12px;
 }
 
 .links {
-    float: right;
+    float: left;
     list-style: none;
-    /* margin-right: 290px;*/
-    margin-top: -45px;
-    margin-right: 290px;
+    margin-left: 50px;
     font-size: 16px;
 }
 
 .links li {
     display: inline-block;
+    margin-right: 50px;
+    margin-top: 13px;
 }
 
 .option {
     text-decoration: none;
-    margin-right: 60px;
     color: #a0a0a0;
 }
 
@@ -57,18 +56,54 @@ body {
     color: white;
 }
 
+.premium {
+    overflow: auto;
+    margin: auto;
+    float: left;
+    width: 100px;
+    height: 60px;
+    margin-left: 150px;
+    padding: 10px 0 0 12px;
+}
+
+.crown {
+    float: left;
+    margin-top: 14px;
+    margin-right: 6px;
+    font-size: 20px;
+    color: #FAB818;
+}
+
+.text {
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    color: #FAB818;
+}
+
+.inner-text {
+    color: white;
+}
+
+.premium:hover {
+    background-color: #141519;
+}
+
 .drop {
     position: relative;
+    overflow: auto;
 }
 
 .user-icon {
     float: right;
     font-size: 25px;
-    margin: -60px 80px 0px 0px;
+    margin: 20px 75px 0 0;
     color: #a0a0a0;
 }
 
-.drop-down {
+/* .drop-down {
+
     list-style: none;
     background-color: #1e2025;
     position: absolute;
@@ -77,7 +112,7 @@ body {
     right: 65;
     height: 215px;
     margin-top: 115px;
-    /* display: none; */
+    display: none;
     z-index: 1;
 }
 
@@ -107,4 +142,53 @@ body {
 
 .account:hover {
     background-color: #23252B;
+} */
+
+.landing {
+    background-image: url(../images/wallpaperflare.com_wallpaper\ \(11\).jpg);
+    background-size: cover;
+    position: fixed;
+    height: 100%;
+    top: 72px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.landing .title {
+    color: #141519;
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 0.01;
+    text-transform: uppercase;
+    margin-top: 120px;
+}
+
+.intro {
+    margin: auto;
+    width: 800px;
+    margin-bottom: 30px;
+    margin-top: -20px;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.landing .btn {
+    padding: 15px;
+    width: 150px;
+    border-radius: 5px;
+    border: 0;
+    margin: -5px 30px 0 15px;
+    font-size: 16px;
+    background-color: #23252B;
+    color: white;
+    opacity: 0.95;
+}
+
+#bb {
+    background-color: midnightblue;
+}
+
+.landing .btn:hover {
+    opacity: 1;
 }
