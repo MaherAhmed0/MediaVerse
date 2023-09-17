@@ -1,22 +1,73 @@
 body {
     background-color: #141519;
     font-family: Arial, Helvetica, sans-serif;
-    /* overflow: auto; */
+    margin: 0;
 }
 
+.container {
+    margin: auto;
+    width: 80%;
+    /* background-color: gray; */
+}
+
+/* Components sec */
+/* ------------------------------------------------------------------------------- */
+
+.special-header {
+    margin-top: 100px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.special-header h2 {
+    color: white;
+}
+
+.special-header span {
+    color: #CF9F12;
+}
+
+.outter-frame {
+    margin: auto;
+    width: 200px;
+    position: relative;
+    margin-top: -15px;
+}
+
+.outter-line {
+    margin: auto;
+    background-color: #CF9F12;
+    width: 200px;
+    height: 2px;
+    border-radius: 1px;
+    position: absolute;
+}
+
+.inner-line {
+    background-color: #CF9F12;
+    width: 70px;
+    height: 4px;
+    border-radius: 1px;
+    right: 65;
+    top: -1;
+    position: absolute;
+}
+
+/* Header sec */
+/* ------------------------------------------------------------------------------- */
 .header {
     background-color: #23252B;
     overflow: auto;
     position: fixed;
     width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
+    z-index: 1;
 }
 
 .logo {
-    height: 71px;
-    width: 100px;
+    height: 65px;
+    width: 90px;
     float: left;
     margin-left: 100px;
 }
@@ -24,10 +75,10 @@ body {
 .brand-name {
     float: left;
     color: #D0A012;
-    margin-top: 22px;
+    margin-top: 20px;
     font-weight: bold;
-    font-size: 25px;
-    margin-left: -12px;
+    font-size: 23px;
+    margin-left: -10px;
 }
 
 .links {
@@ -45,7 +96,7 @@ body {
 
 .option {
     text-decoration: none;
-    color: #a0a0a0;
+    color: #dadada;
 }
 
 .option:hover {
@@ -62,7 +113,7 @@ body {
     float: left;
     width: 100px;
     height: 60px;
-    margin-left: 150px;
+    margin-left: 130px;
     padding: 10px 0 0 12px;
 }
 
@@ -98,8 +149,8 @@ body {
 .user-icon {
     float: right;
     font-size: 25px;
-    margin: 20px 75px 0 0;
-    color: #a0a0a0;
+    margin: 20px 75px 0 0px;
+    color: #dadada;
 }
 
 /* .drop-down {
@@ -144,14 +195,12 @@ body {
     background-color: #23252B;
 } */
 
+/* Landing sec */
+/* ------------------------------------------------------------------------------- */
 .landing {
     background-image: url(../images/wallpaperflare.com_wallpaper\ \(11\).jpg);
     background-size: cover;
-    position: fixed;
     height: 100%;
-    top: 72px;
-    left: 0;
-    right: 0;
     text-align: center;
 }
 
@@ -161,7 +210,7 @@ body {
     font-weight: 800;
     letter-spacing: 0.01;
     text-transform: uppercase;
-    margin-top: 120px;
+    padding-top: 150px;
 }
 
 .intro {
@@ -182,13 +231,16 @@ body {
     font-size: 16px;
     background-color: #23252B;
     color: white;
-    opacity: 0.95;
+    opacity: 0.97;
 }
 
-#bb {
+.landing .b2 {
     background-color: midnightblue;
 }
 
 .landing .btn:hover {
     opacity: 1;
 }
+
+/* Services sec */
+/* ------------------------------------------------------------------------------- */
