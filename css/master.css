@@ -98,6 +98,7 @@ body {
 .option {
     text-decoration: none;
     color: #dadada;
+    transition: 0.3s;
 }
 
 .option:hover {
@@ -116,6 +117,7 @@ body {
     height: 60px;
     margin-left: 130px;
     padding: 10px 0 0 12px;
+    transition: 0.3s;
 }
 
 .crown {
@@ -278,6 +280,7 @@ body {
     border-radius: 5px;
     background-color: #CF9F12;
     color: #fff;
+    transition: 0.5s;
 }
 
 .service-name {
@@ -305,6 +308,7 @@ body {
     right: 0;
     bottom: -2px;
     background-color: #CF9F12;
+    transition: 0.5s;
 }
 
 .cir {
@@ -315,6 +319,7 @@ body {
     height: 120px;
     border-radius: 50%;
     background-color: #CF9F12;
+    transition: 0.5s;
 }
 
 .service-item:hover .cir {
@@ -338,6 +343,107 @@ body {
     background-color: #23252B;
 }
 
+/* Content Categories sec */
+/* ------------------------------------------------------------------------------- */
+.categories-content {
+    overflow: hidden;
+}
+
+.categories-item {
+    width: 30%;
+    float: left;
+    padding: 20px;
+    position: relative;
+}
+
+.categories-item img {
+    width: 100%;
+    height: 380px;
+}
+
+.categories-item .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.categories-item:hover .content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.content-layer {
+    padding: 70px 40px;
+}
+
+.content-layer h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    opacity: 0;
+    top: -20;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.content-layer p {
+    text-transform: capitalize;
+    color: white;
+    position: relative;
+    opacity: 0;
+    top: -20;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.content-layer i {
+    font-size: 24px;
+    padding: 10px;
+    margin: 20px 10px;
+    border-radius: 5px;
+    color: #141519;
+    background-color: #FAB818;
+    position: relative;
+    top: -20;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.categories-item:hover .content .content-layer h2 {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.categories-item:hover .content .content-layer p {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.categories-item:hover .content .content-layer i {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.content .content-layer i:hover {
+    background-color: #141519;
+    color: white;
+    border-radius: 50%;
+}
+
 /* Prices sec */
 /* ------------------------------------------------------------------------------- */
 .prices {
@@ -350,7 +456,7 @@ body {
     background-color: #23252B;
     float: left;
     border-radius: 5px;
-    margin: 30px 33px 300px 33px;
+    margin: 30px 33px 0px 33px;
     padding: 5px 25px 30px 25px;
 }
 
@@ -408,6 +514,7 @@ body {
     color: #fab818;
     background-color: #23252B;
     border: 2px solid;
+    transition: 0.3s;
 }
 
 .subscribe:hover {
@@ -419,6 +526,7 @@ body {
     text-align: center;
     font-size: 12px;
     font-weight: 550;
+    transition: 0.3s;
 }
 
 .no-trial:hover {
