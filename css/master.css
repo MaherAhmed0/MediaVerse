@@ -200,19 +200,25 @@ body {
 /* Landing sec */
 /* ------------------------------------------------------------------------------- */
 .landing {
-    background-image: url(../images/wallpaperflare.com_wallpaper\ \(11\).jpg);
+    background-image: url(../images/wepik-export-20230920213716B5WT.jpg);
     background-size: cover;
     height: 100%;
     text-align: center;
 }
 
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 26, 49, 0.3);
+}
+
 .landing .title {
-    color: #141519;
+    color: #D0A012;
     font-size: 45px;
     font-weight: 800;
     letter-spacing: 0.01;
     text-transform: uppercase;
-    padding-top: 175px;
+    padding-top: 300px;
 }
 
 .intro {
@@ -220,28 +226,31 @@ body {
     width: 800px;
     margin-bottom: 30px;
     margin-top: -20px;
+    color: white;
     text-transform: capitalize;
     font-size: 17px;
 }
 
 .landing .btn {
     padding: 15px;
-    width: 150px;
-    border-radius: 5px;
-    border: 0;
+    width: 200px;
     margin: -5px 30px 0 15px;
     font-size: 16px;
-    background-color: #23252B;
-    color: white;
-    opacity: 0.97;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #1F1F26;
+    color: #D0A012;
+    border: 2px solid #D0A012;
+    transition: 0.3s;
 }
 
 .landing .b2 {
-    background-color: midnightblue;
+    background-color: #1F1F26;
 }
 
 .landing .btn:hover {
-    opacity: 1;
+    color: #e9c55a;
+    border-color: #e9c55a;
 }
 
 /* Services sec */
@@ -582,6 +591,52 @@ body {
 
 .latest-news-item:hover {
     background-color: #141519;
+}
+
+/* Statistics sec */
+/* ------------------------------------------------------------------------------- */
+.statistics {
+    margin-top: 100px;
+    background-image: url(../images/18057944_sep11.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.statistics-overlay {
+    background-color: rgba(28, 26, 49, 0.3);
+}
+
+.statistics-box {
+    overflow: auto;
+    padding: 120px 100px;
+}
+
+.statistics-item {
+    float: left;
+    width: 200px;
+    text-align: center;
+    color: white;
+    margin: 0px 21px;
+    padding: 10px 10px;
+}
+
+.statistics-item i {
+    font-size: 28px;
+    margin-bottom: -7px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #f47521;
+}
+
+.statistics-item h2 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.statistics-item p {
+    font-size: 15px;
+    margin-top: -24px;
 }
 
 /* Prices sec */
