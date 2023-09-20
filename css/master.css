@@ -347,6 +347,7 @@ body {
 /* ------------------------------------------------------------------------------- */
 .categories-content {
     overflow: hidden;
+    margin-left: 7px;
 }
 
 .categories-item {
@@ -444,9 +445,148 @@ body {
     border-radius: 50%;
 }
 
+/* News sec */
+/* ------------------------------------------------------------------------------- */
+
+.news {
+    background-color: #f47521;
+    width: 100%;
+    height: 725px;
+    margin-top: 100px;
+    padding: 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.leaning {
+    position: absolute;
+    left: -83;
+    bottom: 0;
+    width: 250px;
+    height: 550px;
+}
+
+.news-content {
+    background-color: #000000;
+    color: white;
+    padding: 10px 25px;
+    z-index: 1;
+}
+
+.news-head {
+    overflow: auto;
+}
+
+.news-head h2 {
+    font-size: 30px;
+    float: left;
+}
+
+.news-head p {
+    float: right;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-top: 37px;
+    font-weight: 700;
+    color: #bdbdbd;
+}
+
+.news-head i {
+    display: block;
+    float: right;
+    font-size: 13px;
+    margin-top: 38px;
+    margin-left: 5px;
+    font-weight: 700;
+    color: #bdbdbd;
+}
+
+.news-columns {
+    overflow: auto;
+    margin-top: -15px;
+}
+
+.top-news {
+    float: left;
+    width: 33%;
+    margin-right: 5px;
+}
+
+.latest-news {
+    float: left;
+    width: 66%;
+}
+
+.news-title {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.top-news-item {
+    padding: 6px 0 6px 12px;
+    transition: 0.3s;
+}
+
+.top-news-item .top-news-item-img {
+    width: 370px;
+    height: 175px;
+}
+
+.top-news-item .top-news-item-title {
+    font-size: 18px;
+    width: 340px;
+    text-transform: capitalize;
+}
+
+.top-news-item .top-news-item-details {
+    font-size: 12px;
+    color: #bdbdbd;
+    margin-top: -5px;
+}
+
+.top-news-item:hover {
+    background-color: #141519;
+}
+
+.latest-news-item {
+    padding: 12px 0 12px 12px;
+    transition: 0.3s;
+    overflow: auto;
+    transition: 0.3s;
+}
+
+.latest-news-item .latest-news-item-img {
+    float: left;
+    width: 180px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.text-content {
+    float: left;
+    width: 580px;
+}
+
+.latest-news-item .latest-news-item-title {
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-top: 2px;
+}
+
+.latest-news-item .latest-news-item-details {
+    font-size: 12px;
+    color: #bdbdbd;
+    margin-top: -5px;
+}
+
+.latest-news-item:hover {
+    background-color: #141519;
+}
+
 /* Prices sec */
 /* ------------------------------------------------------------------------------- */
-.prices {
+.cards {
     overflow: auto;
 }
 
