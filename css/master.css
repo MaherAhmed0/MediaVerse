@@ -860,6 +860,131 @@ body {
     background-color: #2ABDBB;
 }
 
+/* Authors sec */
+/* ------------------------------------------------------------------------------- */
+.authors {
+    position: relative;
+}
+
+.authors .left {
+    position: absolute;
+    top: 50%;
+    left: 50;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+}
+
+.authors .right {
+    position: absolute;
+    top: 50%;
+    right: 50;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+}
+
+.authors-content {
+    overflow: auto;
+}
+
+.author {
+    float: left;
+    margin-top: 30px;
+    padding-top: 10px;
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+}
+
+.authors-content .center {
+    margin: 30px 5% 0 5%;
+}
+
+.author-img {
+    margin: auto;
+    width: 90%;
+    position: relative;
+}
+
+.author-img img {
+    width: 100%;
+    height: 400px;
+}
+
+.author-img .img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.author:hover .img-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.author-img .img-overlay a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #CF9F12;
+    color: #fff;
+    font-size: 23px;
+    margin-left: auto;
+    margin-bottom: 2px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.author-img .img-overlay a i {
+    line-height: 40px;
+}
+
+.author-img .img-overlay a:hover {
+    background-color: #23252B;
+    border-radius: 50%;
+}
+
+.author-name {
+    color: white;
+    text-align: center;
+}
+
+.author-work {
+    color: white;
+    text-align: center;
+    margin-top: -8px;
+}
+
+.author::after {
+    content: "";
+    position: absolute;
+    bottom: -50;
+    right: -50;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #a0a0a0;
+    opacity: 0.1;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.author:hover::after {
+    width: 150%;
+    height: 150%;
+    border-radius: 0;
+}
+
 /* Prices sec */
 /* ------------------------------------------------------------------------------- */
 .cards {
