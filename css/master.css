@@ -597,6 +597,7 @@ body {
 /* ------------------------------------------------------------------------------- */
 .statistics {
     margin-top: 100px;
+    margin-bottom: 100px;
     background-image: url(../images/18057944_sep11.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -637,6 +638,226 @@ body {
 .statistics-item p {
     font-size: 15px;
     margin-top: -24px;
+}
+
+/* Recommendations sec */
+/* ------------------------------------------------------------------------------- */
+.recommendations {
+    position: relative;
+    background-color: #000000;
+    padding: 30px 0 20px 0;
+    color: white;
+}
+
+.recommendations .left {
+    position: absolute;
+    top: 50%;
+    left: 50;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.recommendations .right {
+    position: absolute;
+    top: 50%;
+    right: 50;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.recommendations-content {
+    overflow: auto;
+}
+
+.recommendations-content .text-content {
+    float: left;
+}
+
+.recommendations-content .text-content .title {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.recommendations-content .text-content .title::before {
+    content: '';
+    position: absolute;
+    bottom: -4;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: #f47521;
+}
+
+.recommendations-content .text-content .lang {
+    overflow: auto;
+    margin-top: -25px;
+}
+
+.recommendations-content .text-content .lang .content-type {
+    float: left;
+    color: #2ABDBB;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 7px;
+}
+
+.recommendations-content .text-content .lang .lang-type {
+    float: left;
+    color: #bdbdbd;
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.recommendations-content .text-content .lang div {
+    float: left;
+    height: 20px;
+    width: 1px;
+    background-color: #bdbdbd;
+    margin-top: 13px;
+}
+
+.recommendations-content .text-content .rate {
+    overflow: auto;
+    margin-top: -20px;
+    margin-bottom: 12px;
+}
+
+.recommendations-content .text-content .rate .avg-rate {
+    float: left;
+    font-size: 15px;
+    margin-right: 6px;
+    transition: 0.3s;
+}
+
+.recommendations-content .text-content .rate .avg-rate span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.recommendations-content .text-content .rate .avg-rate:hover {
+    text-decoration: underline;
+}
+
+.recommendations-content .text-content .rate div {
+    float: left;
+    height: 20px;
+    width: 1px;
+    background-color: #bdbdbd;
+    margin-top: 13px;
+}
+
+.recommendations-content .text-content .rate .review {
+    float: left;
+    font-size: 15px;
+    margin-left: 6px;
+    transition: 0.3s;
+}
+
+.recommendations-content .text-content .rate .review:hover {
+    text-decoration: underline;
+}
+
+.recommendations-content .text-content .whatchlist {
+    width: 220px;
+    height: 50px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #000000;
+    color: #f47521;
+    border: 2px solid #f47521;
+    transition: 0.3s;
+}
+
+.recommendations-content .text-content .whatchlist i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.recommendations-content .text-content .whatchlist:hover {
+    color: #FF944D;
+    border-color: #FF944D;
+}
+
+.recommendations-content .text-content .medialist {
+    width: 220px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #000000;
+    color: #a0a0a0;
+    border: 0;
+    transition: 0.3s;
+}
+
+.recommendations-content .text-content .medialist i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.recommendations-content .text-content .medialist:hover {
+    background-color: #141519;
+}
+
+.recommendations-content .text-content .description {
+    line-height: 24px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.recommendations-content .text-content .genres {
+    float: left;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #192E38;
+    transition: 0.3s;
+}
+
+.recommendations-content .text-content .genres:hover {
+    background-color: #254352;
+}
+
+.recommendations-content .image-content {
+    float: left;
+    width: 670px;
+}
+
+.recommendations-content .image-content img {
+    width: 350px;
+    height: 520px;
+    display: block;
+    margin: auto;
+}
+
+.recommendations-content .image-content .cirs {
+    list-style: none;
+    margin-left: 260px;
+}
+
+.recommendations-content .image-content .cirs li {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 7px;
+    border-radius: 50%;
+    border: 2px solid #2ABDBB;
+    background-color: white;
+}
+
+.recommendations-content .image-content .cirs .active {
+    background-color: #2ABDBB;
+}
+
+.recommendations-content .image-content .cirs li:hover {
+    background-color: #2ABDBB;
 }
 
 /* Prices sec */
@@ -812,7 +1033,7 @@ body {
     font-weight: 600;
     border-radius: 50%;
     margin: 15px;
-    color: #141519;
+    color: #000000;
     background-color: #f47521;
 }
 
