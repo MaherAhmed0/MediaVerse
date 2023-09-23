@@ -202,7 +202,7 @@ body {
 .landing {
     background-image: url(../images/wepik-export-20230920213716B5WT.jpg);
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     text-align: center;
 }
 
@@ -893,6 +893,7 @@ body {
     margin-top: 30px;
     padding-top: 10px;
     width: 30%;
+    height: 525px;
     position: relative;
     overflow: hidden;
 }
@@ -985,6 +986,112 @@ body {
     border-radius: 0;
 }
 
+/* Book Recommendations sec */
+/* ------------------------------------------------------------------------------- */
+.books-recommendations {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-image: url(../images/books.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    position: relative;
+}
+
+.books-recommendations-overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.books-recommendations .left {
+    position: absolute;
+    top: 50%;
+    left: 50;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+}
+
+.books-recommendations .right {
+    position: absolute;
+    top: 50%;
+    right: 50;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+
+}
+
+.books-content {
+    overflow: auto;
+    padding: 120px 100px;
+}
+
+.books-recommendations .book {
+    float: left;
+    width: 45%;
+}
+
+.point {
+    margin: 0 5%;
+}
+
+.upper-content {
+    overflow: auto;
+}
+
+.book .book-img {
+    float: left;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.book .book-name {
+    font-size: 20px;
+    color: white;
+}
+
+.book .book-lang {
+    overflow: auto;
+    margin-top: -20px;
+}
+
+.book-lang .content-type {
+    float: left;
+    color: #2ABDBB;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 7px;
+    margin-left: 0;
+}
+
+.book-lang .content-type:hover {
+    text-decoration: underline;
+}
+
+.book-lang .lang-type {
+    float: left;
+    color: #bdbdbd;
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.book-lang div {
+    float: left;
+    height: 20px;
+    width: 1px;
+    background-color: #bdbdbd;
+    margin-top: 13px;
+}
+
+.book p {
+    color: white;
+    margin-left: 7px;
+}
+
 /* Prices sec */
 /* ------------------------------------------------------------------------------- */
 .cards {
@@ -992,13 +1099,12 @@ body {
 }
 
 .plan-card {
-    width: 300px;
-    height: 480px;
     background-color: #23252B;
     float: left;
     border-radius: 5px;
-    margin: 30px 33px 0px 33px;
-    padding: 5px 25px 30px 25px;
+    margin-top: 30px;
+    padding: 5px 25px 0px 25px;
+    width: 24%;
 }
 
 .plan-name {
@@ -1009,6 +1115,8 @@ body {
 
 .most-popular {
     border: 1px solid #D0A012;
+    margin-left: 7.80%;
+    margin-right: 7.50%;
 }
 
 .popular {
@@ -1107,7 +1215,7 @@ body {
 /* ------------------------------------------------------------------------------- */
 .footer {
     padding: 40px 0;
-    margin-top: 200px;
+    margin-top: 100px;
     text-align: center;
     background-color: black;
 }
@@ -1157,9 +1265,17 @@ body {
     font-size: 28px;
     font-weight: 600;
     border-radius: 50%;
-    margin: 15px;
+    margin: 15px 10px;
     color: #000000;
     background-color: #f47521;
+}
+
+.icons-list li div {
+    width: 2px;
+    height: 35px;
+    background-color: #f47521;
+    color: #f47521;
+    margin-bottom: -10px;
 }
 
 .footer .copyright {
