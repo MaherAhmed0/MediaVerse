@@ -98,7 +98,46 @@ body {
 .option {
     text-decoration: none;
     color: #dadada;
+    position: relative;
     transition: 0.3s;
+}
+
+.option::before {
+    content: "";
+    position: absolute;
+    bottom: -8;
+    left: 0;
+    height: 2px;
+    width: 0px;
+    background-color: #CF9F12;
+    transition: 0.4s;
+}
+
+.option::after {
+    content: "";
+    position: absolute;
+    bottom: -8;
+    right: 0;
+    height: 2px;
+    width: 0px;
+    background-color: #CF9F12;
+    transition: 0.4s;
+}
+
+.option:hover::before {
+    width: 50%;
+}
+
+.option:hover::after {
+    width: 50%;
+}
+
+.option:focus::before {
+    width: 50%;
+}
+
+.option:focus::after {
+    width: 50%;
 }
 
 .option:hover {
@@ -1018,7 +1057,6 @@ body {
     font-size: 24px;
     font-weight: 800;
     color: white;
-
 }
 
 .books-content {
@@ -1090,6 +1128,141 @@ body {
 .book p {
     color: white;
     margin-left: 7px;
+}
+
+/* Behind the Scenes */
+/* ------------------------------------------------------------------------------- */
+.behind-scenes {
+    position: relative;
+}
+
+.behind-scenes .left {
+    position: absolute;
+    top: 50%;
+    left: 50;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+}
+
+.behind-scenes .right {
+    position: absolute;
+    top: 50%;
+    right: 50;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+}
+
+.behind-scenes-content {
+    overflow: auto;
+    margin-top: 40px;
+}
+
+.one-show-content {
+    padding: 20px 0;
+    width: 30%;
+    float: left;
+    transition: 0.3s;
+}
+
+.one-show-content:hover {
+    background-color: #23252B;
+}
+
+.center-show {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.one-show-content .image-container {
+    position: relative;
+}
+
+.one-show-content .image-container img {
+    width: 90%;
+    margin: 0 5%;
+    height: 450px;
+}
+
+.one-show-content .image-container i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    padding: 15px 20px;
+    background-color: #141519b0;
+    border-radius: 50%;
+    visibility: hidden;
+    /* transition: 0.3s; */
+}
+
+.one-show-content:hover .image-container i {
+    visibility: visible;
+    background-color: #141519;
+}
+
+.reactions {
+    list-style: none;
+    margin-top: -3px;
+    margin-left: 20px;
+    padding: 0;
+    color: white;
+}
+
+.reactions li {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.reactions li p {
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.reactions li p:hover {
+    text-decoration: underline;
+}
+
+.reactions li i {
+    font-size: 18px;
+}
+
+.reactions li .like:hover {
+    color: red;
+}
+
+.show-name {
+    color: white;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.show-description {
+    color: white;
+    margin-left: 23px;
+    margin-top: -10px;
+}
+
+.read-more-link {
+    text-decoration: none;
+    color: white;
+    margin-left: 23px;
+    margin-top: -10px;
+    position: relative;
+}
+
+.read-more-link::after {
+    content: "";
+    position: absolute;
+    bottom: -5;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    color: #CF9F12;
+    background-color: #CF9F12;
 }
 
 /* Prices sec */
@@ -1268,6 +1441,11 @@ body {
     margin: 15px 10px;
     color: #000000;
     background-color: #f47521;
+    transition: 0.3s;
+}
+
+.footer .icons-list li a i:hover {
+    background-color: #f36607;
 }
 
 .icons-list li div {
