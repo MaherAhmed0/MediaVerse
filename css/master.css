@@ -195,47 +195,6 @@ body {
     color: #dadada;
 }
 
-/* .drop-down {
-    list-style: none;
-    background-color: #1e2025;
-    position: absolute;
-    float: right;
-    width: 340px;
-    right: 65;
-    height: 215px;
-    margin-top: 115px;
-    display: none;
-    z-index: 1;
-}
-
-.drop-down::before {
-    content: "";
-    position: absolute;
-}
-
-.drop:hover .drop-down {
-    display: block;
-}
-
-.account {
-    padding: 14px 24px;
-}
-
-.title {
-    color: #DADADA;
-    font-size: 20px;
-}
-
-.sub-title {
-    color: #a0a0a0;
-    font-size: 14px;
-    margin-top: -18px;
-}
-
-.account:hover {
-    background-color: #23252B;
-} */
-
 /* Landing sec */
 /* ------------------------------------------------------------------------------- */
 .landing {
@@ -643,7 +602,6 @@ body {
 
 /* News sec */
 /* ------------------------------------------------------------------------------- */
-
 .news {
     background-color: #f47521;
     width: 100%;
